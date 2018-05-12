@@ -1,0 +1,32 @@
+h1 {
+  font-size: 18px;
+  padding-top: 3%;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h5 {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+a {
+  font-size: 30px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.top-image {
+  height: 200px;
+  padding: 1% 0 10%;
+}
+
+.image-thumbnail {
+  max-width: 150px;
+  max-height: 150px;
+}
