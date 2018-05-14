@@ -3,14 +3,21 @@
   <head>
     <title>Terri Portfolio</title>
     <meta charset="utf-8">
+    <!-- meta viewport that instruct the page the screen's width in device independent pixels -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link rel="stylesheet" type="text/css" media="screen and (max-width: 530px)" href="./css/responsive-phone.css">
-    <link rel="stylesheet" type="text/css" href="./css/responsive.css">
+    <!-- default css file -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- responsive css file for phone device  -->
+    <link rel="stylesheet" media="screen and (max-width: 530px)" href="./css/responsive-phone.css">
+    <!-- responsive css file for desktop with different viewports  -->
+    <link rel="stylesheet" href="./css/responsive.css">
   </head>
   <body>
+    <!-- Container for whole html page using flexbox -->
     <div class="body-container">
+      <!-- Container for just the header using flexbox -->
+      <!-- Header contains a Logo and Title -->
       <header class="header-container">
         <img class="logo" src="./images/Udacity_logo_125.png" alt="Udacity Logo">
         <div class="header-title">
@@ -19,25 +26,32 @@
         </div>
       </header>
 
+      <!-- The main picture of the page -->
+      <!-- responsive image - Choose different picture size for different viewport -->
       <picture class="image-container">
         <source media="(min-width: 800px)" srcset="./images/robots-1024.png">
         <source media="(min-width: 531px)" srcset="./images/robots-640.png">
         <img class="top-image" src="./images/robots-320.png" alt="My robots picture">
       </picture>
 
+      <!-- This section displays 3 projects -->
       <section class="featured-work">
         <h2 class="text-center">FEATURED WORK</h2>
+        <!-- Container for the 3 projects, using flexbox -->
         <div class="work-container">
+          <!-- Project #1 -->
           <div class="text-center thumbnail-container">
             <img class="image-thumbnail" src="./images/pcb-640.png" alt="work #1">
             <h2>Random Quote Machine</h2>
             <a href="https://codepen.io/robotsuk/full/RQRJvy/" target="_blank">RQM</a>
           </div>
+          <!-- Project #2 -->
           <div class="text-center thumbnail-container">
             <img class="image-thumbnail" src="./images/alki-640.png" alt="work #2">
             <h2>Local Weather App</h2>
             <a href="https://codepen.io/robotsuk/full/oEBdpP/" target="_blank">Weather</a>
           </div>
+          <!-- Project #3 -->
           <div class="text-center thumbnail-container">
             <img class="image-thumbnail" src="./images/peppers-640.png" alt="work #3">
             <h2>My Favorite Food</h2>
@@ -46,6 +60,7 @@
         </div>
       </section>
 
+      <!-- End of page, maybe add license info in the future -->
       <footer class="text-center">
         <p>Written and Coded by Terri Chong</p>
       </footer>
